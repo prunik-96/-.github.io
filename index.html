@@ -8,7 +8,9 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-                background-image: url('ASD.jpg');
+            background-image: url('ASD.jpg'); /* Установлен фон */
+            background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 0;
         }
@@ -36,12 +38,12 @@
 <body>
     <div class="container">
         <h1>Добро пожаловать на мой сайт!</h1>
-        <button onclick="changeText()">правда</button>
-        <p id="output">Володя.</p>
+        <button onclick="changeText()">Нажми</button>
+        <p id="output">Текст изменится после нажатия.</p>
     </div>
     <script>
         function changeText() {
-            document.getElementById("output").textContent = "Поздравляю! Володя питух.";
+            document.getElementById("output").textContent = "Поздравляю! Текст изменён.";
         }
     </script>
 </body>
